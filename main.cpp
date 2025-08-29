@@ -11,12 +11,10 @@ int main() {
     string userAnswer;
     bool keepGoing = true;
 
-    
-
+    cout << "Welcome to the Business Sorting Program!" << "\n";
 
     while (keepGoing) {
-        cout << "Welcome to the Business Sorting Program!" << "\n";
-
+        
         cout << "Please enter the name of a business: ";
         getline(cin, businessName);
         businessList.push_back(businessName);
