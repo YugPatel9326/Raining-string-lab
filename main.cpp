@@ -9,17 +9,17 @@ int main() {
     vector<string> businessList;
     string businessName;
     string userAnswer;
-    bool keepGoing = true;
+    bool continueLoop = true;
 
     cout << "Welcome to the Business Sorting Program" << "\n";
 
-    while (keepGoing) {
+    while (continueLoop) {
         
         cout << "Please enter your business name: ";
         getline(cin, businessName);
         businessList.push_back(businessName);
         sort(businessList.begin(), businessList.end());
-        cout << "\nYour business(es):\n" << "\n";
+        cout << "\nYour business(es): " << "\n";
 
         for (int i = 0; i < businessList.size(); i++) {
             cout << businessList[i] << "\n";
@@ -31,7 +31,7 @@ int main() {
         if (userAnswer == "y" || userAnswer == "Y" || 
             userAnswer == "yes" || userAnswer == "Yes") {
         } else {
-            keepGoing = false; 
+            continueLoop = false; 
 
         }
 
